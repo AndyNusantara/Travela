@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+header {
+  height: 125px;
+  background-color: #38ada9;
+  overflow: hidden;
+}
+
+header .kiri img {
+  width: 100px;
+  height: 100px;
+  margin: 15px 0 0 35px;
+  float: left;
+}
+
+header .kanan {
+  float: left;
+  font-size: 20px;
+  color: white;
+  margin-top: 15px;
+  margin-left: 90px;
+}
+
+article {
+  overflow: hidden;
+}
+article .kiri {
+  float: left;
+  width: 330px;
+}
+article .kanan {
+  width: 650px;
+  float: right;
+}
+article h1 {
+  color: green;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: gambria;
+}
+
+article p {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.kiritengah {
+  position: fixed;
+  background-color: #747d8c;
+  padding: 15px;
+  left: 0;
+  bottom: 0;
+}
+
+.kiritengah h1 {
+  color: #fff;
+}
+
+.kiritengah img {
+  width: 45px;
+  padding-right: 20px;
+}
+.kiritengah img:hover {
+  width: 52px;
+}
+
+article .kanan {
+  width: 650px;
+  float: right;
+}
+
+article .kanan .atas img {
+  width: 650px;
+  height: 340px;
+}
+
+article .kanan .atas p {
+  margin-top: 20px;
+}
+article .kanan .bawah {
+  overflow: hidden;
+  margin-top: 45px;
+}
+article .kanan .bawah .kiribawah {
+  width: 315px;
+  float: left;
+  border-left: 4px solid red;
+}
+
+article .kanan .bawah .kananbawah {
+  width: 325px;
+  float: right;
+  border-left: 4px solid red;
+}
+
+article .kanan .bawah .kananbawah img {
+  width: 45px;
+  margin-left: 12px;
+}
+article .kanan .bawah h1,
+p {
+  margin-left: 12px;
+}
+
+footer {
+  line-height: 40px;
+  background-color: #b33939;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  height: 40px;
+  margin-top: 30px;
+}
+
+/* QUIZ */
+.container2 {
+  width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+.container2 header {
+  width: 1000px;
+  margin: auto;
+  background-color: darkblue;
+  text-align: center;
+  justify-content: center;
+  line-height: 60px;
+  border-bottom: 2px solid red;
+}
+
+.container2 header h1 {
+  color: white;
+}
+
+.container2 header h2 {
+  color: red;
+}
+
+.container2 img {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+}
+
+.container2 .kiri {
+  float: left;
+  width: 325px;
+  margin: 2px;
+}
+
+.container2 .tengah {
+  float: left;
+  width: 325px;
+  margin: 2px;
+}
+
+.container2 .kanan {
+  float: left;
+  width: 325px;
+  margin: 2px;
+}
+
+.container2 p {
+  margin: 10px;
+}
+/* AKHIR QUIZ */
+
+/* NAV */
+nav ul li {
+  border-right: 1px solid black;
+  float: left;
+  list-style: none;
+  background-color: #bb3b81;
+}
+
+nav ul li a {
+  margin-right: 15px;
+  text-decoration: none;
+  padding: 3px 15px;
+  color: blue;
+}
+
+nav ul li ul {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav {
+  position: relative;
+  background-color: #bb3b81;
+  height: 40px;
+  line-height: 40px;
+}
+
+nav ul li ul {
+  position: absolute;
+}
+
+nav ul li ul li {
+  float: none;
+  position: relative;
+}
+
+nav ul li:hover {
+  background-color: #90ccb8;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul ul ul {
+  left: 100%;
+  top: 0;
+  width: 200px;
+}
+/* AKHIR NAV */
+
+/* AWAL TABEL */
+table {
+  font-family: "arial";
+}
+
+caption {
+  background-color: black;
+  color: white;
+  font-size: 26px;
+  padding: 10px;
+}
+
+th,
+td {
+  padding: 5px 25px;
+}
+
+thead {
+  background-color: steelblue;
+  color: silver;
+}
+tbody {
+  background-color: silver;
+}
+td {
+  color: blue;
+}
+tfoot {
+  background-color: seagreen;
+  color: white;
+}
+
+tbody tr td:nth-child(2) {
+  text-align: center;
+}
+
+tbody tr td:nth-child(3),
+tbody tr td:nth-child(4) {
+  text-align: right;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+/* AKHIR TABEL */

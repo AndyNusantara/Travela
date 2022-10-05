@@ -1,0 +1,617 @@
+*,
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Alex;
+    src: url(font/AlexBrush-Regular.ttf);
+}
+
+/* header */
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* nav */
+nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+nav h1 {
+    padding: 10px;
+}
+
+ul li {
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+}
+
+li {
+    display: flex;
+    list-style-type: none;
+}
+
+nav img {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+.contact img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(218, 53, 53);
+}
+
+header ul li ul {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    transition: 2s;
+}
+
+nav ul li:hover ul {
+    animation: transisi 0.3s 1 ease-in-out both;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+nav ul li ul:hover {
+    display: block;
+}
+
+@keyframes transisi {
+    0% {
+        background-color: rgba(255, 255, 255, 0.7);
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* Section 1 */
+.container {
+    width: 100vw;
+    height: 650px;
+    background: url(images/banner.png.webp) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.text h1 {
+    font-family: Alex, arial;
+    font-size: 6rem;
+}
+
+/* Section 2 */
+.container2 {
+    width: 100vw;
+    height: 150px;
+    background-color: rgb(1, 2, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+h4 {
+    margin: 15px;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(1, 2, 44);
+    color: white;
+    border-radius: 7px;
+    border: 2px solid rgb(86, 86, 95);
+}
+
+button {
+    background-color: red;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Section 3 */
+
+.judul {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.judul h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.judul p {
+    line-height: 30px;
+    color: gray;
+}
+
+.galery {
+    margin: auto;
+    width: 1400px;
+}
+
+.foto {
+    float: left;
+    position: relative;
+    margin: 20px;
+    transition: all 0.5s;
+}
+
+.foto img {
+    width: 400px;
+    height: 270px;
+}
+
+.places {
+    position: absolute;
+    display: flex;
+    font-size: 1.5rem;
+    bottom: 30px;
+    left: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+.foto .placeNo {
+    margin-left: 10px;
+    left: 100px;
+    font-size: 0.8rem;
+    width: 90px;
+    height: 32px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: lightseagreen;
+}
+
+.foto:hover {
+    transform: translateY(-7px);
+}
+.foto:hover .place {
+    color: red;
+}
+.foto:hover .placeNo {
+    background-color: red;
+}
+
+/* Section 4 */
+.container4 {
+    width: 100%;
+    height: 185px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/subscribe.png) no-repeat center center;
+    background-size: cover;
+}
+
+.container4 .kiri {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.container4 .kanan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+.container4 input {
+    width: 500px;
+}
+
+/* Section 5 */
+.container5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7fafd;
+}
+
+.foto1 {
+    float: left;
+    position: relative;
+    margin: 20px;
+    transition: all 0.5s;
+    border: 1px #f0eeee solid;
+}
+
+.price {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background-color: lightseagreen;
+    width: 60px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.foto1 img {
+    width: 400px;
+    height: 230px;
+}
+
+.caption {
+    margin-bottom: 25px;
+}
+
+.caption h2,
+.caption p {
+    margin: 15px 0 0 20px;
+}
+
+.caption p {
+    color: gray;
+}
+
+.caption h2 {
+    font-weight: lighter;
+    transition: all 0.3s ease;
+}
+
+.review {
+    display: flex;
+    width: 400px;
+}
+
+.time {
+    display: flex;
+    position: absolute;
+    right: 10px;
+}
+
+.foto1:hover {
+    box-shadow: 2px 2px 20px gray;
+}
+
+.foto1:hover h2 {
+    color: red;
+}
+
+.foto1:hover .price {
+    background-color: red;
+}
+
+.butt {
+    margin: 100px 0 150px 0;
+    width: 180px;
+    height: 50px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.butt:hover {
+    background-color: lightseagreen;
+}
+
+/* Section 6 */
+.container6 {
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video {
+    width: 100vw;
+    height: 500px;
+    background: url(images/videobackground.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.video h1 {
+    font-family: Alex;
+    font-size: 5rem;
+    color: white;
+}
+
+.benefit {
+    height: 300px;
+    margin-top: 50px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.benefit1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 40px 0 40px;
+}
+
+.benefit h3 {
+    font-weight: lighter;
+}
+
+.benefit p {
+    color: gray;
+}
+
+.benefit img {
+    margin-bottom: 20px;
+}
+
+/* Section 7 */
+.container7 {
+    width: 100vw;
+    height: 400px;
+    background-color: #f7fafd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container7 img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.container7 p {
+    width: 400px;
+    text-align: center;
+}
+
+.container7 h6 {
+    color: gray;
+    margin-top: 20px;
+}
+
+/* Section 8 */
+.container8 {
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container8 h1 {
+    font-weight: 20;
+}
+
+.gall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.gall h6 {
+    margin: 5px 0 5px 0;
+    color: gray;
+}
+
+.gall h3 {
+    font-weight: lighter;
+    transition: all 0.3s ease;
+}
+
+.gall .img {
+    margin: 30px;
+    width: 300px;
+}
+
+.container8 .img img {
+    width: 300px;
+    height: 200px;
+}
+
+.img:hover h3 {
+    color: red;
+}
+
+/* footer */
+footer {
+    width: 100vw;
+    height: 480px;
+    background-color: rgb(1, 2, 44);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* atas */
+.atas {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 80px 0;
+}
+
+.atas h3 {
+    color: white;
+}
+
+.atas p,
+.atas a {
+    font-size: 0.9rem;
+    color: gray;
+    line-height: 30px;
+    transition: all 0.3s ease;
+}
+
+.atas a:hover {
+    color: red;
+}
+
+/* satu */
+.satu {
+    width: 200px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navImg img {
+    margin: 20px 10px 0 0;
+    width: 20px;
+    height: 20px;
+}
+
+.satu-judul {
+    display: flex;
+    align-items: center;
+    height: 55px;
+}
+
+.satu-judul img {
+    width: 52px;
+    height: 40px;
+}
+
+.satu-judul h3 {
+    margin-left: 20px;
+}
+
+.atas h3,
+.atas img {
+    margin-bottom: 30px;
+}
+
+/* dua */
+.dua {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* tiga */
+.tiga {
+    margin-right: 50px;
+    width: 200px;
+}
+.tiga-bawah {
+    display: flex;
+}
+.tiga-kiri {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tiga-kanan {
+    display: flex;
+    flex-direction: column;
+}
+
+/* empat */
+.empat {
+    width: 250px;
+}
+
+.thumbnail img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* bawah */
+.bawah {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    border-top: 1px solid gray;
+}
+
+.bawah h6,
+.bawah a {
+    color: gray;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.bawah a:hover {
+    color: purple;
+}
