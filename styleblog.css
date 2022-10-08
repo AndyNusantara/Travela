@@ -1,0 +1,105 @@
+body,
+html,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/seamless_background_250_line.jpg);
+    background-size: 500px;
+    font-family: cursive;
+}
+
+.container {
+    background-color: rgb(241, 239, 239);
+    width: 1200px;
+    margin: 60px auto;
+}
+
+/* Nav */
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+nav h1 {
+    margin-right: auto;
+    margin-left: 8px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover a {
+    color: gray;
+}
+
+/* Isi */
+
+article {
+    width: 100%;
+    height: 900px;
+    display: flex;
+}
+
+.size {
+    float: left;
+    margin: 10px;
+    padding: 20px;
+    width: 380px;
+    background-color: rgb(224, 219, 219);
+    font-family: "Courier New", Courier, monospace;
+}
+
+.tengah img {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.pic {
+    background: url(images/galeri4.jpg) center no-repeat no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic h1 {
+    color: rgba(80, 79, 79, 0.863);
+    font-size: 2.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    background-color: rgb(2, 2, 56);
+    color: white;
+}
+
+footer a {
+    color: white;
+}
